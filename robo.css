@@ -1,0 +1,292 @@
+body{
+    background-color: black;
+}
+.robo{
+    height: 500px;
+    width: 500px;
+    border: 2px solid red;
+    margin: auto;
+
+}
+
+.head{
+    height: 100px;
+    width: 150px;
+    background-color: chartreuse;
+    margin: auto;
+    margin-top: 15%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: width 1s ease;
+}
+.robo:hover .head{
+    width: 400px;
+    animation: movehead 2.5s infinite;
+}
+@keyframes movehead{
+    0%{
+        width: 200px;
+        background-color: chartreuse;
+    }
+    25%{
+        width: 150px;
+        background-color: antiquewhite;
+    }
+    50%{
+        width: 200px;
+        background-color: chartreuse;
+    }
+    75%{
+        width: 150px;
+        background-color: antiquewhite;
+    }
+    100%{
+        width: 200px;
+    }
+
+}
+
+.eyes{
+    display: flex;
+    width: 130px;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.leye{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    box-shadow: 1px 1px 2px 2px rgb(23, 41, 23);
+    border-radius: 50%;
+}
+.reye{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    box-shadow: 1px 1px 2px 2px rgb(23, 41, 23);
+    border-radius: 50%;
+}
+.body{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+}
+
+
+
+.lhd{
+    height: 80px;
+    width: 30px;  
+    background-color: chartreuse;
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: transform 1s ease;
+}
+.robo:hover .lhd{
+    transform: rotate(75deg);
+    transform-origin: top center;
+    animation: movelhd 2.5s infinite;
+}
+@keyframes movelhd{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;        
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;       
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top center;    
+    }
+}
+.center{
+    height: 120px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 0 0 50px 50px ;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: transform 2s ease;
+}
+.robo:hover .center{
+    transform: rotate(360deg);
+    transform-origin: top center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    animation: movecenter 2.5s infinite;
+}
+@keyframes movecenter{
+    0%{
+        transform: rotate(180deg);
+        transform-origin: center;
+        background-color: chartreuse;
+    }
+    25%{
+        transform: rotate(360deg);
+        transform-origin: center;
+        background-color: antiquewhite;
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: center;
+        background-color: chartreuse;
+    }
+    75%{
+        transform: rotate(-180deg);
+        transform-origin: center;
+        background-color: antiquewhite;
+    }
+    100%{
+        transform: rotate(-180deg);
+        transform-origin: center;
+    }
+}
+
+.rhd{
+    height: 80px;
+    width: 30px;  
+    background-color: chartreuse;
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: transform 1s ease;
+}
+.robo:hover .rhd{
+    transform: rotate(75deg);
+    transform-origin: top center;
+    animation: moverhd 2.5s infinite;
+}
+@keyframes moverhd{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;        
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;       
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top center;    
+    }
+}
+.legs{
+    display: flex;
+    width: 85px;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.ll{
+    height: 80px;
+    width: 30px;  
+    background-color: chartreuse;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: transform 1s ease;
+}
+.robo:hover .ll{
+    transform: rotate(-75deg);
+    transform-origin: top center;
+    animation: movell 2.5s infinite;
+}
+@keyframes movell{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;        
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;       
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top center;    
+    }
+}
+
+
+
+.rl{
+    height: 80px;
+    width: 30px;  
+    background-color: chartreuse;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 3px 3px 6px 6px rgb(16, 186, 16);
+    transition: transform 1s ease;
+}
+.robo:hover .rl{
+    transform: rotate(-75deg);
+    transform-origin: top center;
+    animation: moverl 2.5s infinite;
+}
+@keyframes moverl{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;        
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+        background-color: chartreuse;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background-color: antiquewhite;       
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top center;    
+    }
+}
